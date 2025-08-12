@@ -57,6 +57,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Ad Space platform colors
+        'navy-900': '#0A0B1E',
+        'navy-800': '#141633',
+        'navy-700': '#1E2247',
+        'cyan-500': '#00E5E5',
+        'cyan-400': '#39F5F5',
+        'pink-500': '#E535AB',
+        'pink-400': '#F154C1',
       },
       borderRadius: {
         lg: "var(--radius)",
