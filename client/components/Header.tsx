@@ -23,18 +23,32 @@ export function Header() {
 
         {/* Navigation */}
         <nav className="flex items-center space-x-8">
-          <a href="#" className="text-cyan-500 hover:text-cyan-400 transition-colors">
+          <a
+            href="#"
+            className="text-cyan-500 hover:text-cyan-400 transition-colors"
+          >
             Upload
           </a>
           <div className="relative">
             <button className="text-white hover:text-gray-300 transition-colors flex items-center">
               Activity
-              <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+              <svg
+                className="w-4 h-4 ml-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
               </svg>
             </button>
           </div>
-          <a href="#" className="text-white hover:text-gray-300 transition-colors">
+          <a
+            href="#"
+            className="text-white hover:text-gray-300 transition-colors"
+          >
             Account
           </a>
           <div className="flex items-center space-x-3">

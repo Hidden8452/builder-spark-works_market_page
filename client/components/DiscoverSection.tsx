@@ -1,4 +1,11 @@
-import { ChevronDown, Filter, Globe, Camera, MapPin, Clock } from "lucide-react";
+import {
+  ChevronDown,
+  Filter,
+  Globe,
+  Camera,
+  MapPin,
+  Clock,
+} from "lucide-react";
 
 const images = [
   {
@@ -8,7 +15,7 @@ const images = [
     duration: "2.00 PM",
     likes: "5,574",
     photographer: "Hiroshi Yamamoto",
-    verified: true
+    verified: true,
   },
   {
     id: 2,
@@ -17,7 +24,7 @@ const images = [
     duration: "7.00 PM",
     likes: "4,582",
     photographer: "Wu Ming Chen",
-    verified: true
+    verified: true,
   },
   {
     id: 3,
@@ -26,7 +33,7 @@ const images = [
     duration: "10.00 AM",
     likes: "3,891",
     photographer: "Seamus O'Brien",
-    verified: true
+    verified: true,
   },
   {
     id: 4,
@@ -35,7 +42,7 @@ const images = [
     duration: "2.00 PM",
     likes: "6,129",
     photographer: "Tomás Novák",
-    verified: true
+    verified: true,
   },
   {
     id: 5,
@@ -44,7 +51,7 @@ const images = [
     duration: "2.00 PM",
     likes: "2,847",
     photographer: "Li Wei",
-    verified: true
+    verified: true,
   },
   {
     id: 6,
@@ -53,8 +60,8 @@ const images = [
     duration: "2.00 PM",
     likes: "5,392",
     photographer: "Anna Procházka",
-    verified: true
-  }
+    verified: true,
+  },
 ];
 
 export function DiscoverSection() {
@@ -75,36 +82,36 @@ export function DiscoverSection() {
               <span>Advanced Filter</span>
               <Filter className="w-4 h-4" />
             </button>
-            
+
             <div className="flex items-center space-x-4">
               <button className="flex items-center space-x-2 bg-navy-800 border border-navy-700 rounded px-3 py-2 text-white hover:border-cyan-500 transition-colors">
                 <span>Featured</span>
               </button>
-              
+
               <button className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors">
                 <span>All times</span>
               </button>
-              
+
               <button className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors">
                 <Camera className="w-4 h-4" />
                 <span>Art</span>
               </button>
-              
+
               <button className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors">
                 <span>Photography</span>
               </button>
-              
+
               <button className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors">
                 <Globe className="w-4 h-4" />
                 <span>3D</span>
               </button>
-              
+
               <button className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors">
                 <span>Motion</span>
               </button>
             </div>
           </div>
-          
+
           <div className="flex items-center space-x-4">
             <span className="text-white font-semibold">3,150,000 results</span>
             <button className="flex items-center space-x-2 bg-navy-800 border border-navy-700 rounded px-3 py-2 text-white hover:border-cyan-500 transition-colors">
@@ -134,7 +141,10 @@ export function DiscoverSection() {
         {/* Image Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {images.map((image) => (
-            <div key={image.id} className="bg-navy-800 rounded-lg overflow-hidden hover:bg-navy-700 transition-colors cursor-pointer">
+            <div
+              key={image.id}
+              className="bg-navy-800 rounded-lg overflow-hidden hover:bg-navy-700 transition-colors cursor-pointer"
+            >
               <div className="relative">
                 <img
                   src={image.src}
@@ -147,10 +157,12 @@ export function DiscoverSection() {
                   </span>
                 </div>
               </div>
-              
+
               <div className="p-4">
-                <h3 className="text-white font-semibold text-lg mb-2">{image.title}</h3>
-                
+                <h3 className="text-white font-semibold text-lg mb-2">
+                  {image.title}
+                </h3>
+
                 <div className="flex items-center justify-between text-sm text-gray-400 mb-3">
                   <div className="flex items-center space-x-1">
                     <Clock className="w-4 h-4" />
@@ -160,14 +172,24 @@ export function DiscoverSection() {
                     <span>❤️ {image.likes}</span>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2">
                     <div className="w-6 h-6 bg-gray-600 rounded-full"></div>
-                    <span className="text-gray-400 text-sm">{image.photographer}</span>
+                    <span className="text-gray-400 text-sm">
+                      {image.photographer}
+                    </span>
                     {image.verified && (
-                      <svg className="w-4 h-4 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      <svg
+                        className="w-4 h-4 text-cyan-500"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clipRule="evenodd"
+                        />
                       </svg>
                     )}
                   </div>

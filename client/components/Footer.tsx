@@ -9,23 +9,25 @@ export function Footer() {
           <div className="flex items-center space-x-3 mb-6">
             <div className="text-cyan-500 text-2xl font-bold">Notify</div>
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-white text-2xl font-bold mb-4">
                 The New Creative Economy.
               </h3>
               <p className="text-gray-400 text-lg leading-relaxed">
-                Subscribe our newsletter to get more free
-                design course and resource.
+                Subscribe our newsletter to get more free design course and
+                resource.
               </p>
             </div>
-            
+
             <div className="bg-navy-800 rounded-lg p-6">
-              <h4 className="text-white text-lg font-semibold mb-4">Join Newsletter</h4>
+              <h4 className="text-white text-lg font-semibold mb-4">
+                Join Newsletter
+              </h4>
               <p className="text-gray-400 mb-4">
-                Subscribe our newsletter to get more free
-                design course and resource.
+                Subscribe our newsletter to get more free design course and
+                resource.
               </p>
               <div className="flex">
                 <input
@@ -46,37 +48,123 @@ export function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Explore</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Discover</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Connect wallet</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Create wallet</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Discover
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Connect wallet
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Create wallet
+                </a>
+              </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-white font-semibold mb-4">Info</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Download</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Demo</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Support</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Download
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Demo
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Support
+                </a>
+              </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-white font-semibold mb-4">Support</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Help center</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Partners</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Suggestions</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Discord</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Docs</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Newsletter</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Help center
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Partners
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Suggestions
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Discord
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Docs
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Newsletter
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
         {/* Recommended Section */}
         <div className="mb-8">
-          <h4 className="text-white font-semibold text-lg mb-4">Recommended for you</h4>
+          <h4 className="text-white font-semibold text-lg mb-4">
+            Recommended for you
+          </h4>
         </div>
 
         {/* Bottom */}
